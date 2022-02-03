@@ -30,7 +30,7 @@ public class OfbizDemoEvents {
             return "error";
         }
         String comments = request.getParameter("comments");
-
+        Debug.log("=============="+comments);
         try {
             Debug.logInfo("=======Creating OfbizDemo record in event using service createOfbizDemoByGroovyService=========", module);
             dispatcher.runSync("createOfbizDemoByGroovyService", UtilMisc.toMap("ofbizDemoTypeId", ofbizDemoTypeId,
