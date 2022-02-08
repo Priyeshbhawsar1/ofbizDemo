@@ -1,13 +1,16 @@
 <div class="screenlet-body">
     <#if ofbizDemoList?has_content>
-    <table cellspacing=0 cellpadding=2 border=0 class="basic-table">
-        <thead><tr>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
             <th>${uiLabelMap.OfbizDemoId}</th>
             <th>${uiLabelMap.OfbizDemoType}</th>
             <th>${uiLabelMap.OfbizDemoFirstName}</th>
             <th>${uiLabelMap.OfbizDemoLastName}</th>
             <th>${uiLabelMap.OfbizDemoComment}</th>
-        </tr></thead>
+        </tr>
+        </thead>
         <tbody>
         <#list ofbizDemoList as ofbizDemo>
         <tr>
